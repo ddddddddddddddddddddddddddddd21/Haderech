@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>הדרך שלי</title>
+
+<link rel="manifest" id="pwa-manifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="הדרך שלי">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+
+:root {
+--bg:        transparent;
+--surface:   rgba(255,255,255,0.045);
+--surface2:  rgba(255,255,255,0.07);
+--surface3:  rgba(255,255,255,0.10);
+--border:    rgba(100,200,255,0.09);
+--border2:   rgba(100,200,255,0.15);
+--text-1:    rgba(255,255,255,0.96);
+--text-2:    rgba(160,220,255,0.58);
+--text-3:    rgba(160,220,255,0.44);
+--blue:      #50BEFF;
+--blue-dim:  rgba(80,190,255,0.13);
+--blue-b:    rgba(80,190,255,0.25);
+--green:     #3CDCAA;
+--green-dim: rgba(60,220,170,0.13);
+--amber:     #FFD60A;
+--amber-dim: rgba(255,214,10,0.13);
+--red:       #FF7070;
+--red-dim:   rgba(255,112,112,0.13);
+--radius:    12px;
+--radius-lg: 16px;
+--tr:        0.18s ease;
+}
+
+html {
+background: linear-gradient(160deg, #0E1822 0%, #080F1A 55%, #050C16 100%);
+min-height: 100%;
+}
+html::before {
+content: '';
+position: fixed;
+inset: 0;
+pointer-events: none;
+z-index: 0;
+background:
+radial-gradient(ellipse 55% 35% at 80% 5%,  rgba(80,200,255,0.10) 0%, transparent 100%),
+radial-gradient(ellipse 40% 30% at 10% 85%, rgba(40,140,255,0.07) 0%, transparent 100%);
+}
+
+body {
+font-family: 'Heebo', sans-serif;
+background: transparent;
+color: var(--text-1);
+min-height: 100vh;
+max-width: 430px;
+margin: 0 auto;
+-webkit-font-smoothing: antialiased;
+position: relative;
+z-index: 1;
+}
+
+.screen { display:none; flex-direction:column; min-height:100vh; }
+.screen.active { display:flex; }
+
+/* TOPBAR */
+.topbar {
+display:flex; align-items:center; justify-content:space-between;
+padding:18px 20px 12px;
+position:sticky; top:0; z-index:20;
+background: rgba(8,15,26,0.5);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border-bottom: 1px solid rgba(100,200,255,0.06);
+}
+.topbar-title { font-size:13px; font-weight:600; color:var(--text-2); }
+.icon-btn {
+min-width:44px; min-height:44px; display:flex; align-items:center; justify-content:center;
+border:none; background:none; cursor:pointer; color:var(--text-2);
+font-size:20px; border-radius:var(--radius); transition:background var(--tr);
+}
+.icon-btn:active { background:var(--surface2); }
+
+/* BODY */
+.body { flex:1; overflow-y:auto; padding:0 20px 100px; }
+
+/* PROGRESS STRIP */
+.progress-strip { margin-bottom:28px; }
+.progress-bars { display:flex; gap:5px; margin-bottom:6px; }
+.p-bar { flex:1; height:3px; border-radius:2px; background:var(--surface3); cursor:pointer; transition:background var(--tr); }
+.p-bar.today   { background:var(--blue); }
+.p-bar.done    { background:var(--green); }
+.p-bar.partial { background:var(--amber); }
+.p-bar.missed  { background:var(--red); }
+.progress-labels { display:flex; gap:5px; }
+.p-label { flex:1; text-align:center; font-size:12px; font-weight:600; color:var(--text-3); transition:color var(--tr); }
+.p-label.today   { color:var(--blue); }
+.p-label.done    { color:var(--green); }
+.p-label.partial { color:var(--amber); }
+.p-label.missed  { color:var(--red); }
+
+.week-chip { font-size:11px; font-weight:600; color:var(--text-3); letter-spacing:0.5px; text-transform:uppercase; margin-bottom:10px; display:block; }
+.principle-name { font-size:28px; font-weight:800; color:var(--text-1); line-height:1.1; letter-spacing:-0.4px; margin-bottom:6px; }
+.principle-desc { font-size:13px; font-weight:300; color:var(--text-2); line-height:1.75; margin-bottom:20px; }
+
+/* TASK CARD */
+.task-item {
+display:flex; align-items:flex-start; gap:14px;
+padding:16px;
+background: var(--surface);
+border: 1px solid var(--border);
+border-radius: var(--radius-lg);
+margin-bottom: 20px;
+}
+.task-circle {
+width:20px; height:20px; border-radius:50%; flex-shrink:0;
+border:1.5px solid var(--blue); margin-top:2px;
+}
+.task-text { font-size:15px; font-weight:400; color:var(--text-1); line-height:1.6; }
+
+/* STATUS */
+.status-section { padding-top:4px; }
+.status-label { font-size:11px; font-weight:600; color:var(--text-3); letter-spacing:0.5px; text-transform:uppercase; margin-bottom:10px; }
+.status-row { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:20px; }
+.stn {
+min-height:46px; border-radius:var(--radius);
+border:1px solid var(--border2); background:var(--surface);
+font-family:'Heebo',sans-serif; font-size:13px; font-weight:500;
+color:var(--text-2); cursor:pointer; transition:all var(--tr);
+}
+.stn:active { transform:scale(0.96); }
+.stn.s-done    { border-color:rgba(60,220,170,0.4);  background:var(--green-dim); color:var(--green); }
+.stn.s-partial { border-color:rgba(255,214,10,0.35); background:var(--amber-dim); color:var(--amber); }
+.stn.s-missed  { border-color:rgba(255,112,112,0.35); background:var(--red-dim);  color:var(--red); }
+
+/* NOTE */
+.note-item {
+display:flex; align-items:flex-start; gap:12px;
+padding:14px 16px;
+background: var(--surface); border:1px solid var(--border);
+border-radius:var(--radius-lg); margin-bottom:20px;
+}
+.note-icon { font-size:14px; color:var(--text-3); margin-top:2px; flex-shrink:0; width:20px; text-align:center; }
+textarea {
+flex:1; border:none; outline:none; resize:none; background:transparent;
+font-family:'Heebo',sans-serif; font-size:14px; color:var(--text-1);
+line-height:1.6; caret-color:var(--blue); padding:0;
+}
+textarea::placeholder { color:var(--text-3); }
+
+/* BUTTONS */
+.btn {
+width:100%; min-height:50px; border-radius:var(--radius-lg);
+font-family:'Heebo',sans-serif; font-size:15px; font-weight:600;
+cursor:pointer; transition:opacity var(--tr), transform 0.1s; border:none;
+}
+.btn-blue {
+background: rgba(80,190,255,0.14);
+border: 1px solid rgba(80,190,255,0.28);
+color: rgba(160,220,255,0.95);
+}
+.btn-blue:active { opacity:0.75; transform:scale(0.99); }
+.btn-ghost {
+background:var(--surface2); color:var(--text-2);
+border:1px solid var(--border2);
+}
+.btn-ghost:active { opacity:0.7; }
+
+/* REVIEW ENTRY */
+.review-entry {
+display:flex; align-items:center; justify-content:space-between;
+padding:14px 16px; border-radius:var(--radius-lg);
+background:var(--surface); border:1px solid var(--border);
+margin-top:12px; cursor:pointer; transition:opacity var(--tr);
+}
+.review-entry:active { opacity:0.6; }
+.re-text { font-size:14px; font-weight:500; color:var(--text-1); }
+.re-sub  { font-size:12px; color:var(--text-3); margin-top:2px; }
+.re-arrow { font-size:16px; color:var(--blue); }
+
+.divider { height:1px; background:var(--border); margin:20px 0; }
+
+/* NAV */
+.nav {
+position:fixed; bottom:0; left:50%; transform:translateX(-50%);
+width:100%; max-width:430px;
+background: rgba(5,12,22,0.82);
+backdrop-filter: blur(24px);
+-webkit-backdrop-filter: blur(24px);
+border-top:1px solid rgba(100,200,255,0.08);
+display:flex; padding:10px 0 28px; z-index:30;
+}
+.nb {
+flex:1; min-height:44px; display:flex; flex-direction:column;
+align-items:center; justify-content:center; gap:3px;
+border:none; background:none; cursor:pointer; font-family:'Heebo',sans-serif;
+transition: opacity var(--tr);
+}
+.nb-dot { width:4px; height:4px; border-radius:50%; background:transparent; transition:background var(--tr); }
+.nb-label { font-size:12px; color:var(--text-3); transition:color var(--tr); }
+.nb.active .nb-dot  { background:var(--blue); }
+.nb.active .nb-label { color:var(--text-1); font-weight:600; }
+.nb.disabled { opacity:0.3; }
+
+/* TOAST */
+.toast {
+position:fixed; bottom:100px; left:50%; transform:translateX(-50%);
+background:rgba(80,190,255,0.15); border:1px solid rgba(80,190,255,0.25);
+backdrop-filter:blur(20px); color:rgba(160,220,255,0.95);
+padding:10px 22px; border-radius:20px; font-size:13px; font-weight:500;
+opacity:0; pointer-events:none; z-index:99; white-space:nowrap; transition:opacity 0.2s;
+}
+.toast.show { opacity:1; }
+
+/* SPLASH */
+#splash {
+position:fixed; inset:0; z-index:100;
+background: linear-gradient(160deg, #0E1822 0%, #080F1A 55%, #050C16 100%);
+display:flex; flex-direction:column; align-items:center; justify-content:center; cursor:pointer;
+}
+#splash::before {
+content:''; position:absolute; inset:0; pointer-events:none;
+background:
+radial-gradient(ellipse 55% 35% at 80% 5%,  rgba(80,200,255,0.10) 0%, transparent 100%),
+radial-gradient(ellipse 40% 30% at 10% 85%, rgba(40,140,255,0.07) 0%, transparent 100%);
+}
+.splash-icon {
+width:80px; height:80px; border-radius:24px;
+background: rgba(80,190,255,0.15);
+border: 1px solid rgba(80,190,255,0.3);
+backdrop-filter: blur(20px);
+display:flex; align-items:center; justify-content:center;
+margin-bottom:24px; opacity:0;
+animation:fadeUp 0.5s ease 0.2s forwards;
+position:relative; z-index:1;
+}
+.splash-name {
+font-size:28px; font-weight:800; color:rgba(255,255,255,0.95);
+letter-spacing:-0.4px; opacity:0;
+animation:fadeUp 0.5s ease 0.4s forwards;
+position:relative; z-index:1;
+}
+.splash-tap {
+font-size:11px; color:rgba(160,220,255,0.38); letter-spacing:0.8px;
+text-transform:uppercase; margin-top:52px; opacity:0;
+animation:fadeUp 0.4s ease 0.7s forwards, pulse 2.5s ease 1.5s infinite;
+position:relative; z-index:1;
+}
+@keyframes fadeUp { from{opacity:0;transform:translateY(8px);} to{opacity:1;transform:translateY(0);} }
+@keyframes pulse  { 0%,100%{opacity:.2;} 50%{opacity:.55;} }
+
+/* VALUE PICKER */
+#s-picker { background:transparent; }
+.picker-wrap { flex:1; display:flex; flex-direction:column; padding:36px 22px 100px; overflow-y:auto; }
+.picker-title { font-size:26px; font-weight:800; color:var(--text-1); letter-spacing:-0.4px; margin-bottom:8px; }
+.picker-sub   { font-size:13px; color:var(--text-2); font-weight:300; line-height:1.75; margin-bottom:8px; }
+.picker-count { font-size:11px; color:var(--blue); font-weight:700; letter-spacing:0.5px; margin-bottom:24px; }
+
+.value-grid { display:flex; flex-direction:column; gap:8px; margin-bottom:28px; }
+.value-card {
+display:flex; align-items:center; gap:14px;
+padding:14px 16px; border-radius:var(--radius-lg);
+border:1px solid var(--border); background:var(--surface);
+cursor:pointer; transition:all var(--tr);
+}
+.value-card:active { transform:scale(0.98); }
+.value-card.selected { border-color:rgba(80,190,255,0.4); background:var(--blue-dim); }
+.value-card.disabled { opacity:0.3; cursor:default; pointer-events:none; }
+.value-card-check {
+width:22px; height:22px; border-radius:50%; flex-shrink:0;
+border:1.5px solid var(--border2);
+display:flex; align-items:center; justify-content:center;
+font-size:12px; color:transparent; transition:all var(--tr);
+}
+.value-card.selected .value-card-check { background:var(--blue); border-color:var(--blue); color:#fff; }
+.value-card-info { flex:1; }
+.value-card-name { font-size:15px; font-weight:600; color:var(--text-1); margin-bottom:3px; }
+.value-card.selected .value-card-name { color:var(--blue); }
+.value-card-desc { font-size:12px; color:var(--text-3); font-weight:300; line-height:1.5; }
+
+/* WEEK OPEN */
+.wo-wrap { flex:1; display:flex; flex-direction:column; padding:52px 22px 40px; }
+.wo-chip { font-size:11px; font-weight:600; color:var(--text-3); letter-spacing:0.6px; text-transform:uppercase; margin-bottom:14px; }
+.wo-name { font-size:34px; font-weight:800; line-height:1.05; letter-spacing:-0.5px; color:var(--text-1); margin-bottom:14px; }
+.wo-desc { font-size:15px; color:var(--text-2); line-height:1.8; font-weight:300; flex:1; margin-bottom:32px; }
+
+/* REVIEW */
+.rp-wrap { margin-bottom:20px; }
+.rp-label { font-size:11px; font-weight:600; color:var(--text-3); letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px; }
+.rp-name  { font-size:24px; font-weight:800; letter-spacing:-0.4px; color:var(--text-1); margin-bottom:6px; }
+.rp-desc  { font-size:13px; color:var(--text-2); line-height:1.75; font-weight:300; }
+.rday { padding:12px 0; border-bottom:1px solid var(--border); }
+.rday:last-child { border-bottom:none; }
+.rday-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:5px; }
+.rday-date { font-size:12px; color:var(--text-3); }
+.pill { font-size:10px; font-weight:700; padding:3px 9px; border-radius:7px; flex-shrink:0; }
+.pill.done    { background:var(--green-dim); color:var(--green); }
+.pill.partial { background:var(--amber-dim); color:var(--amber); }
+.pill.missed  { background:var(--red-dim);   color:var(--red); }
+.pill.empty   { background:var(--surface2);  color:var(--text-3); }
+.rday-task { font-size:13px; color:var(--text-1); line-height:1.55; margin-bottom:3px; }
+.rday-note { font-size:12px; color:var(--text-2); line-height:1.55; font-weight:300; }
+.note-field {
+background:var(--surface); border:1px solid var(--border);
+border-radius:var(--radius-lg); margin-bottom:8px; overflow:hidden;
+}
+.note-field-label {
+font-size:10px; font-weight:700; color:var(--text-3); letter-spacing:0.5px;
+text-transform:uppercase; padding:12px 16px 0; display:block;
+}
+.note-field textarea { display:block; width:100%; padding:8px 16px 13px; flex:none; }
+
+/* CYCLE */
+.cw { display:flex; align-items:center; gap:14px; padding:14px 0; border-bottom:1px solid var(--border); cursor:pointer; transition:opacity var(--tr); }
+.cw:last-child { border-bottom:none; }
+.cw:active { opacity:0.6; }
+.cw-num {
+width:36px; height:36px; border-radius:var(--radius); flex-shrink:0;
+background:var(--blue-dim); border:1px solid var(--blue-b);
+display:flex; align-items:center; justify-content:center;
+font-size:13px; font-weight:700; color:var(--blue);
+}
+.cw-info { flex:1; }
+.cw-name  { font-size:14px; font-weight:500; color:var(--text-1); }
+.cw-stats { font-size:12px; color:var(--text-3); margin-top:2px; }
+.cw-bar   { height:2px; background:var(--surface3); border-radius:2px; margin-top:8px; overflow:hidden; }
+.cw-fill  { height:100%; background:var(--blue); border-radius:2px; }
+
+/* HISTORY */
+.hc {
+background:var(--surface); border:1px solid var(--border);
+border-radius:var(--radius-lg); margin-bottom:8px; overflow:hidden;
+}
+.hc-head { display:flex; justify-content:space-between; align-items:center; padding:14px 16px; cursor:pointer; min-height:44px; }
+.hc-title { font-size:14px; font-weight:600; color:var(--text-1); }
+.hc-sub   { font-size:12px; color:var(--text-3); margin-top:2px; }
+.hc-chevron { font-size:12px; color:var(--text-3); transition:transform var(--tr); }
+.hc-chevron.open { transform:rotate(180deg); }
+.hc-body  { display:none; border-top:1px solid var(--border); }
+.hc-body.open { display:block; }
+.hw {
+display:flex; align-items:center; justify-content:space-between;
+padding:11px 16px; border-bottom:1px solid var(--border);
+cursor:pointer; min-height:44px;
+}
+.hw:last-child { border-bottom:none; }
+.hw-name { font-size:13px; color:var(--text-2); }
+.hw-dots { display:flex; gap:3px; width:120px; }
+.md { flex:1; height:26px; border-radius:5px; }
+.md.done    { background:var(--green); opacity:0.85; }
+.md.partial { background:var(--amber); opacity:0.85; }
+.md.missed  { background:var(--red);   opacity:0.85; }
+.md.empty   { background:var(--surface3); }
+
+.back-btn {
+display:flex; align-items:center; gap:5px; border:none; background:none;
+cursor:pointer; color:var(--blue); font-family:'Heebo',sans-serif;
+font-size:14px; font-weight:500; padding:0; min-height:44px;
+}
+.empty { text-align:center; padding:64px 20px; color:var(--text-3); font-size:14px; line-height:1.8; }
+</style>
+<script>
+(function(){
+  var manifest = {
+    "name":"הדרך שלי","short_name":"הדרך שלי","description":"מסע ערכים אישי",
+    "start_url":".","display":"standalone","orientation":"portrait",
+    "background_color":"#080F1A","theme_color":"#080F1A","lang":"he","dir":"rtl",
+    "icons":[
+      {"src":"data:image/png;base64,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","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+      {"src":"data:image/png;base64,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","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+    ]
+  };
+  var blob = new Blob([JSON.stringify(manifest)],{type:'application/json'});
+  var url  = URL.createObjectURL(blob);
+  document.getElementById('pwa-manifest').href = url;
+})();
+</script>
+</head>
+<body>
+
+<div id="splash" onclick="dismissSplash()">
+  <div class="splash-icon">
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+      <circle cx="12" cy="34" r="4.5" stroke="rgba(160,220,255,0.8)" stroke-width="2.5" fill="none"/>
+      <circle cx="32" cy="12" r="4.5" fill="rgba(160,220,255,0.95)"/>
+      <path d="M12 34 C12 22 32 22 32 12" stroke="rgba(160,220,255,0.9)" stroke-width="3" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+  <div class="splash-name">הדרך שלי</div>
+  <div class="splash-tap">לחץ להמשיך</div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="screen" id="s-picker">
+  <div class="picker-wrap">
+    <div class="picker-title">בחר את הערכים שלך</div>
+    <div class="picker-sub">בחר עד 6 ערכים שתרצה לעבוד עליהם. הסדר שתבחר הוא סדר השבועות.</div>
+    <div class="picker-count" id="picker-count">0 / 6 נבחרו</div>
+    <div class="value-grid" id="value-grid"></div>
+    <button class="btn btn-blue" id="picker-confirm" onclick="confirmValues()" style="opacity:0.4;pointer-events:none">התחל מסע</button>
+    <div style="height:12px"></div>
+  </div>
+</div>
+
+<div class="screen" id="s-home">
+  <div class="topbar">
+    <div class="topbar-title" id="h-week-label"></div>
+    <button class="icon-btn" onclick="nav('history')" aria-label="היסטוריה">☰</button>
+  </div>
+  <div class="body">
+    <div id="h-date" style="font-size:13px;color:var(--text-3);font-weight:400;margin-bottom:18px;padding-top:18px;"></div>
+    <div class="progress-strip" id="h-strip"></div>
+    <div class="week-chip" id="h-principle-label"></div>
+    <div class="principle-name" id="h-principle"></div>
+    <div class="principle-desc" id="h-desc"></div>
+    <div class="task-item">
+      <div class="task-circle"></div>
+      <div class="task-body">
+        <div class="task-text" id="h-task"></div>
+      </div>
+    </div>
+    <div class="status-section">
+      <div class="status-label">איך הלך?</div>
+      <div class="status-row">
+        <button class="stn" id="b-done"    onclick="setStatus('done')"   >עשיתי</button>
+        <button class="stn" id="b-partial" onclick="setStatus('partial')">חלקית</button>
+        <button class="stn" id="b-missed"  onclick="setStatus('missed')" >לא יצא</button>
+      </div>
+    </div>
+    <div class="note-item">
+      <div class="note-icon">✎</div>
+      <textarea id="h-note" rows="2" placeholder="הערה קצרה..."></textarea>
+    </div>
+    <button class="btn btn-blue" onclick="saveDay()">שמור</button>
+    <div class="review-entry" id="h-review-link" style="display:none" onclick="nav('review')">
+      <div>
+        <div class="re-text">סקירה שבועית</div>
+        <div class="re-sub">סיים את השבוע</div>
+      </div>
+      <span class="re-arrow">←</span>
+    </div>
+  </div>
+</div>
+
+<div class="screen" id="s-week-open">
+  <div class="wo-wrap">
+    <div class="wo-chip"  id="wo-label"></div>
+    <div class="wo-name"  id="wo-name"></div>
+    <div class="wo-desc"  id="wo-desc"></div>
+    <button class="btn btn-blue" onclick="startWeek()">התחל שבוע</button>
+  </div>
+</div>
+
+<div class="screen" id="s-review">
+  <div class="topbar">
+    <button class="back-btn" onclick="navBack()"><span id="r-back-label">← חזור</span></button>
+    <div style="font-size:14px;font-weight:600;color:var(--text-2)" id="r-screen-title">סקירה שבועית</div>
+    <div style="width:60px"></div>
+  </div>
+  <div class="body">
+    <div class="rp-wrap">
+      <div class="rp-label">העיקרון השבוע</div>
+      <div class="rp-name" id="r-name"></div>
+      <div class="rp-desc" id="r-desc"></div>
+    </div>
+    <div id="r-days"></div>
+    <div class="divider"></div>
+    <div class="note-field"><span class="note-field-label">מה עבד לי השבוע?</span><textarea id="r-q1" rows="2" placeholder="כתוב כאן..."></textarea></div>
+    <div class="note-field"><span class="note-field-label">מה היה לי קשה?</span><textarea id="r-q2" rows="2" placeholder="כתוב כאן..."></textarea></div>
+    <div class="note-field" style="margin-bottom:4px"><span class="note-field-label">מה אני לוקח לשבוע הבא?</span><textarea id="r-q3" rows="2" placeholder="כתוב כאן..."></textarea></div>
+    <button id="r-save-btn" class="btn btn-blue" style="margin-top:16px;display:none" onclick="saveReview()">שמור סקירה</button>
+  </div>
+</div>
+
+<div class="screen" id="s-cycle">
+  <div class="topbar">
+    <button class="back-btn" onclick="nav('home')">← חזור</button>
+    <div style="font-size:14px;font-weight:600;color:var(--text-2)">סיום מחזור</div>
+    <div style="width:60px"></div>
+  </div>
+  <div class="body">
+    <div style="font-size:13px;color:var(--text-2);line-height:1.8;font-weight:300;margin-bottom:20px;padding-top:16px;">סיימת את המחזור. הנה מבט על הדרך שעשית.</div>
+    <div id="c-weeks"></div>
+    <button class="btn btn-blue" style="margin-top:20px" onclick="startNewCycle()">התחל מחזור חדש</button>
+  </div>
+</div>
+
+<div class="screen" id="s-history">
+  <div class="topbar">
+    <button class="back-btn" onclick="nav('home')">← חזור</button>
+    <div style="font-size:14px;font-weight:600;color:var(--text-2)">היסטוריה</div>
+    <div style="width:60px"></div>
+  </div>
+  <div class="body" id="history-body" style="padding-top:16px;"></div>
+</div>
+
+<nav class="nav" id="main-nav">
+  <button class="nb active" id="n-home"    onclick="nav('home')"   ><div class="nb-dot"></div><span class="nb-label">היום</span></button>
+  <button class="nb"        id="n-review"  onclick="nav('review')" ><div class="nb-dot"></div><span class="nb-label">סקירה</span></button>
+  <button class="nb"        id="n-cycle"   onclick="nav('cycle')"  ><div class="nb-dot"></div><span class="nb-label">מחזור</span></button>
+  <button class="nb"        id="n-history" onclick="nav('history')"><div class="nb-dot"></div><span class="nb-label">היסטוריה</span></button>
+</nav>
+
+<script>
+const PRESET_VALUES = [
+  { name: "דוגמה אישית", desc: "מנהיגות מתחילה מהמראה בראי", tasks: ["זהה פעולה שאתה מבקש מאחרים לעשות ועשה אותה בעצמך היום","שים לב לאיך אתה מגיב תחת לחץ. האם זה משקף את הדרישות שלך?","דבר עם אדם אחד בצוות בגובה העיניים, פתוח ואמיתי","בחר ערך שחשוב לך ומצא דרך אחת להביא אותו לידי ביטוי מעשי","שאל מישהו קרוב: איפה הדוגמה שלי הכי חזקה?"]},
+  { name: "אחריות", desc: "לבחור להיות הגורם שמניע שינוי", tasks: ["זהה משהו שלא הצלחת ולקח אחריות במקום לחפש סיבות","דווח על טעות שעשית, ישירות ובלי תירוצים","שאל עצמך: מה היה תלוי בי שלא עשיתי? ובחר פעולה לתקן","קח על עצמך משימה שמישהו אחר שכח וסיים אותה","שוחח עם אדם אחד על כך שאחריות היא כוח ולא חולשה"]},
+  { name: "הקשבה", desc: "המתנה שאתה נותן לאחרים", tasks: ["בשיחה אחת היום אל תפריע. האזן עד הסוף לפני שתדבר","שאל שאלה פתוחה למישהו בצוות ושתוק עד שיסיים","שים לב כמה פעמים חשבת על מה שתגיד בזמן שמישהו מדבר","קיים שיחה שנדחתה ותן לאדם מולך להוביל","כתוב: מה ההבדל בין לשמוע לבין להקשיב?"]},
+  { name: "קבלת החלטות", desc: "להחליט עם הנתונים שיש", tasks: ["קבל החלטה אחת שדחית ועשה אותה היום","לפני החלטה קטנה כתוב שני שיקולים בעד ושניים נגד","שתף את ההחלטה עם מישהו ושאל: מה היית עושה אחרת?","זהה החלטה שצריך לקבל עם אחרים ולא לבד","סקור החלטה שקיבלת בשבוע האחרון. האם עדיין הייתה נכונה?"]},
+  { name: "פיתוח פקודים", desc: "הצלחתו נמדדת בהצלחת האנשים שמסביבו", tasks: ["שוחח עם אחד בצוות על מה שהוא רוצה ללמוד","תן לאחד בצוות אחריות שקצת גדולה עליו, עם ליווי","תן פידבק אמיתי ובונה, לא רק חיובי","שאל אחד מהצוות: מה אני יכול לעשות טוב יותר כדי לעזור לך?","זהה נקודת חוזק אצל אחד בצוות ואמר לו"]},
+  { name: "שקיפות", desc: "שקיפות בונה אמון", tasks: ["שתף את הצוות בדבר שהלך פחות טוב, בלי עיטוף","הסבר החלטה שקיבלת מהלוגיקה שמאחוריה, לא רק את התוצאה","אמור אני לא יודע פעם אחת היום ואז לך לברר","שתף מישהו בדבר שאתה מתמודד איתו כמנהיג","בקש מהצוות: מה אני יכול להיות יותר פתוח בו?"]},
+  { name: "אמפתיה", desc: "להבין את האחר לפני שמגיבים", tasks: ["זהה הזדמנות אחת להפגין אמפתיה היום ועשה אותה","שאל מישהו: איפה לדעתך האמפתיה שלי באה לידי ביטוי?","בצע פעולה קטנה אחת שמחזקת את האמפתיה שלך","עצור דקה ושאל את עצמך: איך אמפתיה מתבטאת בהתנהגות שלי היום?","סכם ביום: מה עשיתי היום שקשור לאמפתיה?"]},
+  { name: "אומץ", desc: "לפעול גם כשזה לא נוח", tasks: ["זהה דבר שנמנעת ממנו מחשש ועשה אותו היום","אמור אמת אחת שקשה לומר, בצורה ישירה ומכבדת","קבל עמדה ברורה בנושא שבדרך כלל אתה נמנע מלהביע דעה","עשה פעולה אחת שגורמת לך אי נוחות אך חשובה","שאל עצמך: מה הייתי עושה היום לו לא פחדתי?"]},
+  { name: "עקביות", desc: "הרגלים קטנים בונים תוצאות גדולות", tasks: ["זהה הרגל אחד שאתה רוצה לחזק ועשה אותו היום","בדוק: האם מה שאמרת שתעשה אתמול אכן עשית?","מצא פעולה קטנה שאתה יכול לחזור עליה כל יום, עשה אותה כל היום","שאל מישהו: האם אני נתפס כעקבי? מה אני יכול לשפר?","סכם: מה הרגל אחד שעקביות בו ישפיע הכי הרבה עליך?"]},
+  { name: "תקשורת", desc: "מה שנאמר הוא לא תמיד מה שנשמע", tasks: ["בשיחה אחת היום בדוק שהאחר הבין בדיוק מה התכוונת","שאל: מה שמעת ממה שאמרתי? ושים לב לפער","הסבר משהו מורכב בשני משפטים פשוטים","קרא הודעה שכתבת לפני שליחה ושאל: יכולה להתפרש אחרת?","קיים שיחה פנים אל פנים עם מישהו שרגיל לתקשר איתו רק בכתב"]},
+  { name: "חזון", desc: "לראות לאן הולכים לפני שמתחילים ללכת", tasks: ["כתוב משפט אחד: לאן אתה רוצה להגיע בעוד שנה","שתף מישהו בחזון שלך ושמע את תגובתו","זהה פעולה אחת היום שמקדמת אותך לכיוון החזון","בדוק: האם ההחלטה שקיבלת היום מתיישרת עם החזון שלך?","שאל את הצוות: לאן לדעתכם אנחנו הולכים ביחד?"]},
+  { name: "סבלנות", desc: "להחזיק מעמד גם כשהתוצאות איטיות", tasks: ["זהה מצב שמתסכל אותך ובחר תגובה רגועה ומכוונת","עצור לפני שאתה מגיב ושאל: האם אני ממהר לשיפוט?","מצא ערך או תהליך שלוקח זמן ותזכיר לעצמך שזה בסדר","שוחח עם מישהו שמחכה לתוצאה ואמור לו שאתה מאמין בתהליך","סכם: מה אחד הדברים שדורש ממך הכי הרבה סבלנות כעת?"]},
+  { name: "הכרת תודה", desc: "לראות את הטוב שכבר קיים", tasks: ["אמור תודה אמיתית לאדם אחד שעזר לך לאחרונה","כתוב שלושה דברים שאתה מכיר תודה עליהם הבוקר","שתף את הצוות בהצלחה שלהם שעשתה לך טוב","זהה משהו שנראה כמובן מאליו ועצור להכיר בו","סכם: מה נוכחות הכרת תודה עושה לאווירה סביבך?"]},
+  { name: "גמישות", desc: "להתאים את עצמך מבלי לאבד את עצמך", tasks: ["זהה תוכנית שלא הלכה כמתוכנן והתאם אותה בגמישות","שאל עצמך: האם אני אוחז בעמדה כי היא נכונה או כי קשה לי לשנות?","בחר גישה שונה מהרגיל לפתרון בעיה שעלתה היום","שוחח עם מישהו שמסתכל על המצב אחרת ממך, בסקרנות","סכם: מה ההבדל בין גמישות לבין חוסר עמוד שדרה?"]},
+  { name: "יושרה", desc: "לפעול לפי הערכים גם כשאין עדים", tasks: ["זהה פעולה שעשית היום שתעשה אותה גם לא הכל היה נצפה","בדוק: האם יש פער בין מה שאתה מדבר לבין מה שאתה עושה?","קיים הבטחה קטנה שנתת ולא יצאת לפועל עדיין","אמור לא לדבר שאין לו אחיזה במציאות, גם אם זה נוח","סכם: מה יושרה אומרת לך בהקשר של תפקידך?"]},
+  { name: "ענווה", desc: "לדעת מה אתה יודע ומה עוד לא", tasks: ["אמור אני לא בטוח בנושא שבו בדרך כלל מציג עצמך כמומחה","שאל שאלה שחושפת שאתה לא יודע משהו ובאמת הקשב לתשובה","תן קרדיט פומבי לאדם שתרם לך לאחרונה","זהה תחום שמישהו אחר מצוין בו ממך ולמד ממנו","סכם: מה ענווה אפשרה לך שגאווה הייתה חוסמת?"]},
+  { name: "טוהר מידות", desc: "לפעול מתוך יושר ונקיות, בכל מצב ובלי קשר למי רואה", tasks: ["זהה מצב שבו יכולת לקחת קיצור דרך ובחרת שלא. מה הרגשת?","בדוק: האם יש פעולה שעשית לאחרונה שלא הייתה עומדת בביקורת?","קיים התחייבות קטנה שנתת, גם אם אף אחד לא יבדוק","שתף מישהו בדילמה מוסרית שעברת ואיך התמודדת","סכם: מה טוהר מידות אומר לך בתפקידך היומיומי?"]},
+  { name: "מקצועיות", desc: "לדעת את התפקיד שלך לעומק ולשפר את עצמך כל הזמן", tasks: ["זהה תחום אחד בתפקיד שלך שאתה רוצה להעמיק בו ועשה צעד אחד בכיוון הזה","שאל עמית מנוסה שאלה מקצועית שתלמד ממנה משהו חדש","סקור ביצועים שלך בשבוע האחרון. מה עשית טוב ומה תשפר?","הכן עצמך לביצוע משימה ביסודיות יותר מהרגיל","סכם: מה צעד אחד שתוכל לעשות כדי להיות מקצועי יותר?"]},
+  { name: "נחישות", desc: "להמשיך ולדבוק במשימה גם כשקשה ולמרות המכשולים", tasks: ["זהה משימה שנתקעת בה ועשה בה צעד אחד קדימה היום","כשתגיע לרגע של קושי היום, עצור ושאל: למה זה חשוב לי?","סיים דבר אחד שהתחלת ונטיית לוותר עליו","שתף מישהו במכשול שפגשת ואיך עברת אותו","סכם: מה עוזר לך להמשיך כשזה קשה?"]},
+  { name: "כבוד האדם", desc: "לראות ולכבד כל אדם בשביל מה שהוא, ללא הבדל", tasks: ["פנה לאדם שאתה לא מתקשר איתו בדרך כלל ותן לו תשומת לב אמיתית","שים לב לאיך אתה מדבר על אנשים כשהם לא נמצאים","זהה מצב שבו יכולת לפגוע בכבוד מישהו ובחרת שלא","שאל את עצמך: האם כל אדם שאני פוגש מרגיש שראיתי אותו?","סכם: מה כבוד האדם אומר לך בהקשר של הצוות שלך?"]},
+  { name: "רעות", desc: "לעמוד לצד הסובבים אותך ולסייע להם כשצריך", tasks: ["זהה מישהו שנראה שזקוק לעזרה ופנה אליו","הצע עזרה לעמית בלי שביקש ממך","בדוק: האם יש מישהו בצוות שהתרחקתי ממנו? מה אני יכול לעשות?","קיים שיחה אמיתית עם מישהו שלא שוחחת איתו מזמן","סכם: מה רעות אמיתית נראית עליך בשגרת היום?"]},
+  { name: "לכידות", desc: "לבנות קשר אמיתי ואחווה בין אנשי הצוות", tasks: ["עשה פעולה אחת שמחזקת את תחושת השייכות בצוות שלך","שים לב לאחד שנמצא בשוליים ומשוך אותו פנימה","צור הזדמנות לשיחה בלתי פורמלית עם חברי הצוות","שתף סיפור אישי שמחזק את הקשר בינך לבין הצוות","סכם: מה הדבר שהכי מאחד את הצוות שלך? וכיצד תחזק אותו?"]},
+  { name: "בניית אמון", desc: "אמון נבנה בטיפות ונשפך בדליים", tasks: ["עשה מה שאמרת שתעשה, גם אם זה קטן","שתף מידע שיכולת לשמור לעצמך אבל יועיל לאחרים","קיים שיחה שנדחתה שהייתה יכולה לחזק אמון","שאל: מה אני יכול לעשות כדי שתרגיש בטוח יותר לשתף איתי?","סכם: מה פגע באמון שלך כלפי מישהו? מה בנה אותו?"]},
+  { name: "חשיבה מתוך שפע", desc: "הצלחת האחר לא מורידה מהצלחתך", tasks: ["עזור לאחד להצליח בלי לשאול מה יוצא לך מזה","שתף ידע או כלי שעוזר לך עם מישהו אחר","חגוג הצלחה של עמית בלב שלם","זהה מקום שבו אתה חושב בתחרותיות ושאל: מה אם לא חייבים?","סכם: איפה חשיבת שפע שינתה לך אינטראקציה לאחרונה?"]},
+  { name: "ניהול עצמי", desc: "לפני שמוביל אחרים, להוביל את עצמך", tasks: ["בדוק: האם השגרה שלך משרתת את היעדים שלך?","זהה תגובה רגשית שהייתה לך ובחן אותה בסקרנות","עשה דבר אחד שנדחה שאתה יודע שחשוב לך","הגדר גבול אחד שחשוב לך ושמור עליו היום","סכם: מה היית רוצה לשפר בניהול העצמי שלך בתקופה הזאת?"]},
+  { name: "חוסן", desc: "לקום אחרי נפילה ולצאת חזק יותר", tasks: ["זהה כישלון קטן מלאחרונה ושאל: מה למדתי מזה?","שנה נרטיב שלילי על עצמך לנרטיב של למידה","שתף מישהו בקושי שעברת ואיך התמודדת","זהה משאב אחד שעוזר לך לשקם את עצמך ופנה לו","סכם: מה גרם לך להיות חזק יותר ממה שהיית לפני שנה?"]},
+  { name: "יצירתיות", desc: "לראות אפשרויות שאחרים לא רואים", tasks: ["פתור בעיה שיגרתית בדרך שונה לחלוטין מהרגיל","שאל: מה היינו עושים לו לא הייתה לנו מגבלה X?","חשוב על 3 פתרונות שונים לאתגר אחד לפני שתבחר","חשוף את עצמך לתוכן שאינו מתחומך ומצא קשר","סכם: מתי בפעם האחרונה חשבת מחוץ לקופסה? מה יצא מזה?"]},
+  { name: "שיתוף פעולה", desc: "ביחד מגיעים רחוק יותר", tasks: ["כלול אחד נוסף בתהליך שבדרך כלל עושה לבד","שאל: מי יכול לתרום לפתרון שאני לא רואה?","עזור לאחד להשלים משימה שלו בלי שביקש","בצע תחקיר קצר עם הצוות: מה עבד ומה לא?","סכם: מה מאפשר שיתוף פעולה אמיתי ומה מפריע לו?"]},
+];
+
+const DAYS = 5;
+const MAX_WEEKS = 6;
+const SL = { done:'עשיתי', partial:'חלקית', missed:'לא יצא', '':'—' };
+
+// ── State ────────────────────────────────────────────────────────────────────
+function defaultState() {
+  return { values:null, wi:0, di:0, started:false, logs:[[]], reviews:[], history:[], ci:0 };
+}
+function loadState() {
+  try { const s=localStorage.getItem('haderech_v3'); if(s) return JSON.parse(s); } catch(e){}
+  return defaultState();
+}
+function saveState() {
+  try { localStorage.setItem('haderech_v3', JSON.stringify(st)); }
+  catch(e) { console.warn('שמירה נכשלה', e); }
+}
+let st = loadState();
+
+// ── Review context (replaces _histView/_histViewWi) ──────────────────────────
+// FIX: Centralised context prevents st.wi mutation from review navigation
+let _reviewCtx = { wi:0, isRO:false, hist:null, from:'home' };
+
+// ── Helpers ──────────────────────────────────────────────────────────────────
+// FIX: wk() is now bounds-safe
+function wk() {
+  if(!st.values || st.wi >= st.values.length) return null;
+  return st.values[st.wi];
+}
+
+function ensureLogs() {
+  if(!Array.isArray(st.logs)) st.logs = [];
+  while(st.logs.length <= st.wi) st.logs.push([]);
+  while(st.logs[st.wi].length <= st.di) st.logs[st.wi].push({status:'',note:'',ts:''});
+}
+
+function todayStr() {
+  return new Date().toLocaleDateString('he-IL',{weekday:'long',day:'numeric',month:'long'});
+}
+function log(i) { ensureLogs(); return st.logs[st.wi][i==null?st.di:i]; }
+
+function toast(msg) {
+  const t=document.getElementById('toast');
+  t.textContent=msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2000);
+}
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('s-'+id).classList.add('active');
+  document.getElementById('main-nav').style.display =
+    ['week-open','picker'].includes(id) ? 'none' : 'flex';
+}
+function setNav(id) {
+  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
+  const el=document.getElementById('n-'+id); if(el) el.classList.add('active');
+}
+
+// FIX: navBack uses _reviewCtx.from — no more st.wi mutation
+function navBack() {
+  if(_reviewCtx.from==='history') nav('history');
+  else if(_reviewCtx.from==='cycle') nav('cycle');
+  else nav('home');
+}
+
+// ── Splash ───────────────────────────────────────────────────────────────────
+function dismissSplash() {
+  const s=document.getElementById('splash'); if(!s) return;
+  s.style.transition='opacity 0.3s ease'; s.style.opacity='0';
+  setTimeout(()=>{ s.remove(); afterSplash(); },320);
+}
+function afterSplash() {
+  if(!st.values){ renderPicker(); showScreen('picker'); }
+  else { nav('home'); }
+}
+
+// ── Picker ───────────────────────────────────────────────────────────────────
+let pickerSelected = [];
+
+function renderPicker() {
+  pickerSelected = [];
+  buildPickerGrid();
+  // FIX: Cancel button when history exists (prevents accidental new cycle)
+  const existing = document.getElementById('picker-cancel');
+  if(existing) existing.remove();
+  if(st.history && st.history.length > 0) {
+    const btn = document.createElement('button');
+    btn.id = 'picker-cancel';
+    btn.className = 'btn btn-ghost';
+    btn.style.marginTop = '8px';
+    btn.textContent = 'בטל — חזור למחזור הקודם';
+    btn.onclick = cancelNewCycle;
+    document.querySelector('.picker-wrap').appendChild(btn);
+  }
+}
+
+// FIX: Cancel new cycle restores previous data safely
+function cancelNewCycle() {
+  if(!st.history || !st.history.length) return;
+  const last = st.history[st.history.length-1];
+  st.values  = last.values;
+  st.logs    = last.logs;
+  st.reviews = last.reviews;
+  st.wi      = last.values.length - 1;
+  st.di      = DAYS - 1;
+  st.started = true;
+  st.ci      = last.ci;
+  st.history.pop();
+  saveState();
+  nav('cycle');
+}
+
+function buildPickerGrid() {
+  const grid = document.getElementById('value-grid'); grid.innerHTML='';
+  PRESET_VALUES.forEach(v=>{
+    const isSelected = pickerSelected.some(s=>s.name===v.name);
+    const isDisabled = !isSelected && pickerSelected.length >= MAX_WEEKS;
+    const card = document.createElement('div');
+    card.className = 'value-card'+(isSelected?' selected':'')+(isDisabled?' disabled':'');
+    card.innerHTML = `<div class="value-card-check">${isSelected?'✓':''}</div><div class="value-card-info"><div class="value-card-name">${v.name}</div>${v.desc?`<div class="value-card-desc">${v.desc}</div>`:''}</div>`;
+    card.onclick = ()=>toggleValue(v);
+    grid.appendChild(card);
+  });
+  updatePickerCount();
+}
+function toggleValue(v) {
+  const idx = pickerSelected.findIndex(s=>s.name===v.name);
+  if(idx>=0) pickerSelected.splice(idx,1);
+  else { if(pickerSelected.length>=MAX_WEEKS) return; pickerSelected.push(v); }
+  buildPickerGrid();
+}
+function updatePickerCount() {
+  const n = pickerSelected.length;
+  document.getElementById('picker-count').textContent = `${n} / ${MAX_WEEKS} נבחרו`;
+  const btn = document.getElementById('picker-confirm');
+  btn.style.opacity = n>=1 ? '1' : '0.4';
+  btn.style.pointerEvents = n>=1 ? 'auto' : 'none';
+}
+function confirmValues() {
+  if(!pickerSelected.length) return;
+  st.values = pickerSelected.map(v=>({...v}));
+  st.wi=0; st.di=0; st.started=false; st.logs=[]; st.reviews=[];
+  saveState(); renderWO(); showScreen('week-open');
+}
+
+// ── Navigation ────────────────────────────────────────────────────────────────
+function nav(id) {
+  if(id!=='home') {
+    const n = document.getElementById('h-note'); if(n) n._dirty = false;
+  }
+
+  if(id==='home') {
+    if(!st.values) { renderPicker(); showScreen('picker'); return; }
+    if(!st.started) { renderWO(); showScreen('week-open'); return; }
+    renderHome(); showScreen('home'); setNav('home'); return;
+  }
+
+  if(id==='review') {
+    if(!st.values || !st.started) { toast('התחל שבוע קודם'); return; }
+    // FIX: Review only accessible on last day (day 5)
+    if(st.di < DAYS-1) { toast(`הסקירה זמינה רק ביום ${DAYS}`); return; }
+    // FIX: Save note before navigating to review
+    ensureLogs();
+    log().note = (document.getElementById('h-note').value||'').trim();
+    saveState();
+    _reviewCtx = { wi:st.wi, isRO:false, hist:null, from:'home' };
+    renderReview(); showScreen('review'); setNav('review'); return;
+  }
+
+  if(id==='cycle') {
+    if(!st.values) { toast('עוד לא התחלת מסע'); return; }
+    renderCycle(); showScreen('cycle'); setNav('cycle'); return;
+  }
+  if(id==='history') {
+    renderHistory(); showScreen('history'); setNav('history'); return;
+  }
+}
+
+// ── Home ──────────────────────────────────────────────────────────────────────
+function renderHome() {
+  if(st.started && st.values) {
+    ensureLogs();
+    let cur = log();
+    // FIX: Advance multiple days if user missed several days
+    while(cur.status && cur.ts && cur.ts!==todayStr() && st.di<DAYS-1) {
+      st.di++; ensureLogs(); cur = log();
+    }
+    saveState();
+  }
+  ensureLogs();
+  const d = log();
+  if(!d.ts) { d.ts = todayStr(); saveState(); }
+  const v = wk(); if(!v) return;
+  const totalWeeks = st.values.length;
+
+  document.getElementById('h-date').textContent =
+    new Date().toLocaleDateString('he-IL',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  document.getElementById('h-week-label').textContent =
+    `שבוע ${st.wi+1} מתוך ${totalWeeks}  ·  יום ${st.di+1}`;
+  document.getElementById('h-principle-label').textContent = 'עיקרון השבוע';
+  document.getElementById('h-principle').textContent = v.name;
+  document.getElementById('h-desc').textContent = v.desc||'';
+  document.getElementById('h-task').textContent = getTask(st.wi, st.di);
+
+  const noteEl = document.getElementById('h-note');
+  if(!noteEl._dirty) noteEl.value = d.note||'';
+
+  ['done','partial','missed'].forEach(s=>{
+    document.getElementById('b-'+s).className = 'stn'+(d.status===s?' s-'+s:'');
+  });
+
+  renderStrip();
+
+  // FIX: Review link only visible on last day
+  document.getElementById('h-review-link').style.display = st.di===DAYS-1 ? 'flex' : 'none';
+
+  // FIX: Dim nav review button on days 1–4
+  const reviewNavBtn = document.getElementById('n-review');
+  if(reviewNavBtn) {
+    const onLastDay = st.di === DAYS-1;
+    reviewNavBtn.classList.toggle('disabled', !onLastDay);
+  }
+}
+
+function getTask(wi,di) {
+  const v = st.values[wi];
+  if(v && v.tasks && v.tasks[di]) return v.tasks[di];
+  return getAutoTask(v ? v.name : '', di);
+}
+function getAutoTask(n,i) {
+  return [
+    `זהה הזדמנות אחת להפגין ${n} היום ועשה אותה`,
+    `שאל מישהו: איפה לדעתך ${n} שלי בא לידי ביטוי?`,
+    `בצע פעולה קטנה אחת שמחזקת את ${n} שלך`,
+    `עצור דקה ושאל את עצמך: איך ${n} מתבטא בהתנהגות שלי היום?`,
+    `סכם ביום: מה עשיתי היום שקשור ל${n}?`
+  ][i%5];
+}
+
+function renderStrip() {
+  const wrap = document.getElementById('h-strip');
+  const bars = document.createElement('div'); bars.className='progress-bars';
+  const lbls = document.createElement('div'); lbls.className='progress-labels';
+  for(let i=0;i<DAYS;i++) {
+    const s = (st.logs[st.wi]&&st.logs[st.wi][i]) ? st.logs[st.wi][i].status : '';
+    const cls = i===st.di ? (s||'today') : s||'';
+    const bar = document.createElement('div');
+    bar.className = 'p-bar'+(cls?' '+cls:'');
+    bar.onclick = ()=>jumpDay(i);
+    bars.appendChild(bar);
+    const lbl = document.createElement('div');
+    lbl.className = 'p-label'+(cls?' '+cls:'');
+    lbl.textContent = i+1;
+    lbls.appendChild(lbl);
+  }
+  wrap.innerHTML=''; wrap.appendChild(bars); wrap.appendChild(lbls);
+}
+
+function jumpDay(i) {
+  if(i>st.di) { toast('שמור את היום הנוכחי קודם'); return; }
+  ensureLogs();
+  log().note = document.getElementById('h-note').value.trim();
+  document.getElementById('h-note')._dirty = false;
+  saveState(); st.di=i; saveState(); renderHome();
+}
+
+// FIX: setStatus saves immediately so closing app doesn't lose the selection
+function setStatus(s) {
+  ensureLogs(); log().status = s; saveState(); renderHome();
+}
+
+// FIX: Note is always saved even when status validation fails
+function saveDay() {
+  ensureLogs(); const d = log();
+  d.note = document.getElementById('h-note').value.trim();
+  saveState(); // Always persist note
+  if(!d.status) { toast('בחר סטטוס קודם'); return; }
+  if(!d.ts) d.ts = todayStr();
+  document.getElementById('h-note')._dirty = false;
+  saveState(); toast('נשמר ✓'); renderHome();
+}
+
+// ── Week Open ─────────────────────────────────────────────────────────────────
+function renderWO() {
+  const v = wk(); if(!v) return;
+  document.getElementById('wo-label').textContent =
+    `שבוע ${st.wi+1} מתוך ${st.values ? st.values.length : '?'}`;
+  document.getElementById('wo-name').textContent = v.name;
+  document.getElementById('wo-desc').textContent = v.desc||'';
+}
+function startWeek() {
+  st.started=true; ensureLogs();
+  if(!log().ts) log().ts = todayStr();
+  saveState(); renderHome(); showScreen('home'); setNav('home');
+  const n = document.getElementById('h-note'); if(n) n._dirty=false;
+}
+
+// ── Review ────────────────────────────────────────────────────────────────────
+// FIX: renderReview() takes no parameter — uses _reviewCtx
+// FIX: Save button only shown when not RO AND all 5 days have status
+function renderReview() {
+  const ctx  = _reviewCtx;
+  const h    = ctx.hist || st;
+  const wi   = ctx.wi;
+  const isRO = ctx.isRO;
+  const v    = h.values[wi]; if(!v) return;
+
+  document.getElementById('r-name').textContent = v.name;
+  document.getElementById('r-desc').textContent = v.desc||'';
+  document.getElementById('r-back-label').textContent =
+    ctx.hist ? '← חזור להיסטוריה' : '← חזור';
+  document.getElementById('r-screen-title').textContent =
+    isRO ? 'צפייה בסקירה' : 'סקירה שבועית';
+
+  const list = document.getElementById('r-days'); list.innerHTML='';
+  for(let i=0;i<DAYS;i++) {
+    const d = (h.logs[wi]||[])[i] || {status:'',note:'',ts:''};
+    const task = v.tasks&&v.tasks[i] ? v.tasks[i] : getAutoTask(v.name,i);
+    const el = document.createElement('div'); el.className='rday';
+    el.innerHTML =
+      `<div class="rday-header"><span class="rday-date">${d.ts||`יום ${i+1}`}</span>` +
+      `<span class="pill ${d.status||'empty'}">${SL[d.status||'']}</span></div>` +
+      `<div class="rday-task">${task}</div>` +
+      (d.note ? `<div class="rday-note">${d.note}</div>` : '');
+    list.appendChild(el);
+  }
+
+  // Save button: only when not read-only AND every day has a status
+  const wd = h.logs[wi]||[];
+  const allDone = wd.length>=DAYS && wd.slice(0,DAYS).every(e=>e&&e.status);
+  document.getElementById('r-save-btn').style.display = (!isRO && allDone) ? 'block' : 'none';
+
+  const rev = (h.reviews||[])[wi]||{};
+  document.getElementById('r-q1').value = rev.q1||'';
+  document.getElementById('r-q2').value = rev.q2||'';
+  document.getElementById('r-q3').value = rev.q3||'';
+  ['r-q1','r-q2','r-q3'].forEach(id=>{
+    const el = document.getElementById(id);
+    el.readOnly = isRO;
+    el.style.opacity = isRO ? '0.55' : '1';
+  });
+}
+
+// FIX: Guard against accidental save on read-only review
+function saveReview() {
+  if(_reviewCtx.isRO) { toast('לא ניתן לשמור סקירה זו'); return; }
+  st.reviews[st.wi] = {
+    q1: document.getElementById('r-q1').value.trim(),
+    q2: document.getElementById('r-q2').value.trim(),
+    q3: document.getElementById('r-q3').value.trim()
+  };
+  saveState();
+  if(st.wi < st.values.length-1) {
+    st.wi++; st.di=0; st.started=false;
+    saveState(); toast('מוכן לשבוע הבא');
+    renderWO(); showScreen('week-open');
+  } else {
+    toast('סיימת את המחזור!');
+    setTimeout(()=>{ renderCycle(); showScreen('cycle'); setNav('cycle'); },700);
+  }
+}
+
+// ── Cycle ─────────────────────────────────────────────────────────────────────
+function renderCycle() {
+  const el = document.getElementById('c-weeks'); el.innerHTML='';
+  if(!st.values) return;
+  st.values.forEach((v,w)=>{
+    const days = st.logs[w]||[];
+    const done = days.filter(d=>d&&d.status==='done').length;
+    const part = days.filter(d=>d&&d.status==='partial').length;
+    const pct  = Math.round(((done+part*0.5)/DAYS)*100);
+    const row  = document.createElement('div'); row.className='cw';
+    row.innerHTML =
+      `<div class="cw-num">${w+1}</div>` +
+      `<div class="cw-info"><div class="cw-name">${v.name}</div>` +
+      `<div class="cw-stats">${done}/${DAYS} ימים · ${pct}%</div>` +
+      `<div class="cw-bar"><div class="cw-fill" style="width:${pct}%"></div></div></div>`;
+    // FIX: Never mutate st.wi — use _reviewCtx
+    row.onclick = ()=>{
+      _reviewCtx = { wi:w, isRO:w<st.wi, hist:null, from:'cycle' };
+      renderReview(); showScreen('review'); setNav('review');
+    };
+    el.appendChild(row);
+  });
+}
+
+function startNewCycle() {
+  st.history.push({
+    ci: st.ci,
+    values:  JSON.parse(JSON.stringify(st.values)),
+    logs:    JSON.parse(JSON.stringify(st.logs)),
+    reviews: JSON.parse(JSON.stringify(st.reviews)),
+    date: new Date().toLocaleDateString('he-IL')
+  });
+  st.ci++; st.values=null; st.wi=0; st.di=0; st.started=false; st.logs=[]; st.reviews=[];
+  saveState(); renderPicker(); showScreen('picker');
+}
+
+// ── History ───────────────────────────────────────────────────────────────────
+function resetAll() {
+  if(!confirm('למחוק את כל הנתונים ולהתחיל מחדש?')) return;
+  localStorage.removeItem('haderech_v3');
+  window.location.replace(window.location.href);
+}
+
+function renderHistory() {
+  const el  = document.getElementById('history-body');
+  const all = [...st.history].reverse();
+  const hasCur = st.values && (st.started || st.logs.some(w=>w.length>0));
+  el.innerHTML = '';
+
+  if(!hasCur && all.length===0) {
+    el.innerHTML = '<div class="empty">עדיין אין היסטוריה</div>';
+  } else {
+    if(hasCur)
+      el.appendChild(buildCycleBlock(`מחזור ${st.ci+1} — נוכחי`,`שבוע ${st.wi+1}`,st.values,st.logs,true,-1));
+    all.forEach((h,displayIdx)=>{
+      const origIdx = st.history.length-1-displayIdx;
+      el.appendChild(buildCycleBlock(`מחזור ${h.ci+1}`,`הסתיים ${h.date}`,h.values,h.logs,false,origIdx));
+    });
+  }
+
+  const reset = document.createElement('div');
+  reset.style.cssText = 'text-align:center;padding:8px 0 20px';
+  reset.innerHTML = `<button onclick="resetAll()" style="background:none;border:none;font-family:'Heebo',sans-serif;font-size:12px;color:rgba(255,112,112,0.4);cursor:pointer;padding:12px 20px;letter-spacing:0.3px">איפוס מלא</button>`;
+  el.appendChild(reset);
+}
+
+function buildCycleBlock(title,sub,values,logs,open,histIdx) {
+  const div = document.createElement('div'); div.className='hc';
+  // FIX: Guard for null values
+  if(!values) {
+    div.innerHTML = `<div style="padding:14px 16px;font-size:13px;color:var(--text-3)">${title}</div>`;
+    return div;
+  }
+  const isCurrent = histIdx===-1;
+  const body = values.map((v,i)=>{
+    const days = logs[i]||[];
+    const dots = Array.from({length:DAYS},(_,d)=>
+      `<div class="md ${(days[d]||{status:''}).status||'empty'}"></div>`).join('');
+    const click = isCurrent ? `histWeek(${i})` : `histViewWeek(${histIdx},${i})`;
+    return `<div class="hw" onclick="${click}"><span class="hw-name">שבוע ${i+1}: ${v.name}</span><div class="hw-dots">${dots}</div></div>`;
+  }).join('');
+  div.innerHTML =
+    `<div class="hc-head" onclick="toggleAccordion(this)">` +
+    `<div><div class="hc-title">${title}</div><div class="hc-sub">${sub}</div></div>` +
+    `<span class="hc-chevron${open?' open':''}">▾</span></div>` +
+    `<div class="hc-body${open?' open':''}">${body}</div>`;
+  return div;
+}
+
+function toggleAccordion(head) {
+  const body = head.nextElementSibling;
+  const chev = head.querySelector('.hc-chevron');
+  body.classList.toggle('open'); chev.classList.toggle('open');
+}
+
+// FIX: histWeek no longer mutates st.wi; past weeks are read-only
+function histWeek(wi) {
+  _reviewCtx = { wi:wi, isRO:wi<st.wi, hist:null, from:'history' };
+  renderReview(); showScreen('review'); setNav('review');
+}
+
+function histViewWeek(histIdx, wi) {
+  _reviewCtx = { wi:wi, isRO:true, hist:st.history[histIdx], from:'history' };
+  renderReview(); showScreen('review'); setNav('review');
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+(function init() {
+  if(!st.logs || !Array.isArray(st.logs)) { st=defaultState(); saveState(); }
+  if(st.started && st.values) {
+    ensureLogs();
+    let cur = log();
+    // FIX: Advance multiple missed days (not just one)
+    while(cur.status && cur.ts && cur.ts!==todayStr() && st.di<DAYS-1) {
+      st.di++; ensureLogs(); cur=log();
+    }
+    saveState();
+  }
+  // FIX: Single textarea listener (removed duplicate DOMContentLoaded wrapper)
+  const n = document.getElementById('h-note');
+  if(n) n.addEventListener('input', ()=>{ n._dirty=true; });
+})();
+</script>
+</body>
+</html>
